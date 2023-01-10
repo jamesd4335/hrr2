@@ -54,7 +54,7 @@
       </names>
     </group>
   </macro>
-  <!--<macro name="access">
+  <macro name="access">
     <choose>
       <if type="article-newspaper" match="none">
         <choose>
@@ -83,7 +83,7 @@
         </choose>
       </if>
     </choose>
-  </macro>-->
+  </macro>
   <macro name="title">
     <choose>
       <if type="bill book graphic legal_case legislation motion_picture report song thesis" match="any">
