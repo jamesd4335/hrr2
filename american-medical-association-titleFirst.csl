@@ -124,7 +124,7 @@
   </citation>
   <bibliography>
     <layout>
-    <text macro="title" prefix=" " suffix="%linebreak%" />
+    <text macro="title" prefix=" " suffix="drkfk" />
       <text macro="author"/>
       <choose>
         <if type="bill book graphic legislation motion_picture report song" match="any">
