@@ -110,6 +110,9 @@
       </else>
     </choose>
   </macro>
+    <macro name="year">
+    <date date-parts="year" form="text" variable="issued"/>
+  </macro>
    <citation collapse="citation-number">
     <sort>
       <key variable="citation-number"/>
@@ -123,6 +126,9 @@
     </layout>
   </citation>
   <bibliography et-al-min="3" et-al-use-first="2">
+   <sort>
+      <key macro="year"/>
+    </sort>
     <layout>
     <text macro="title" prefix="" suffix="" />
      <group suffix=") —  " prefix=" (" font-weight="bold">
