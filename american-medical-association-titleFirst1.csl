@@ -110,7 +110,7 @@
       </else>
     </choose>
   </macro>
-  <citation collapse="citation-number">
+   <citation collapse="citation-number">
     <sort>
       <key variable="citation-number"/>
     </sort>
@@ -122,9 +122,14 @@
       </group>
     </layout>
   </citation>
-  <bibliography>
+  <bibliography et-al-min="3" et-al-use-first="1">
     <layout>
-    <text macro="title" prefix=" " suffix=" — " />
+    <text macro="title" prefix="" suffix="" />
+     <group suffix=") —  " prefix=" (" font-weight="bold">
+            <date variable="issued">
+              <date-part name="year"/>
+            </date>
+          </group>
       <text macro="author"/>
       <choose>
         <if type="bill book graphic legislation motion_picture report song" match="any">
