@@ -2,7 +2,7 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" page-range-format="expanded" initialize-with-hyphen="false" default-locale="en-US">
   <info>
     <title>AMA titleFirst</title>
-    <title-short>AMA titleFirst</title-short>
+    <title-short>AMA (11th ed.)</title-short>
     <id>http://www.zotero.org/styles/american-medical-association</id>
     <link href="http://www.zotero.org/styles/american-medical-association" rel="self"/>
     <link href="http://www.zotero.org/styles/american-medical-association-10th-edition" rel="template"/>
@@ -69,6 +69,7 @@
                   <date variable="issued" prefix="Published " form="text"/>
                 </if>
               </choose>
+              <!--
               <group>
                 <text term="accessed" text-case="capitalize-first" suffix=" "/>
                 <date variable="accessed">
@@ -77,6 +78,7 @@
                   <date-part name="year"/>
                 </date>
               </group>
+              -->
               <text variable="URL"/>
             </group>
           </else-if>
