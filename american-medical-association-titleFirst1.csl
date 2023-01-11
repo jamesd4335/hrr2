@@ -133,7 +133,7 @@
     </sort>
     <layout>
     <text macro="title" prefix="" suffix="##!" />
-     <group suffix=") " prefix=" (" font-weight="bold">
+     <group suffix=") " prefix=" (">
             <date variable="issued">
               <date-part name="year"/>
             </date>
