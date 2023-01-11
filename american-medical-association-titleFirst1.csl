@@ -132,8 +132,8 @@
       <key macro="year"/>
     </sort>
     <layout>
-    <text macro="title" prefix="" suffix="" />
-     <group suffix=")##!" prefix=" (" font-weight="bold">
+    <text macro="title" prefix="" suffix="##!" />
+     <group suffix=") " prefix=" (" font-weight="bold">
             <date variable="issued">
               <date-part name="year"/>
             </date>
