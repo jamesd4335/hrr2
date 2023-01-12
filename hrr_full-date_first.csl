@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" page-range-format="expanded" initialize-with-hyphen="false" default-locale="en-US">
   <info>
-    <title>hrr_full-date_first</title>
-    <title-short>hrr_full-date_first</title-short>
+    <title>AMA titleFirst</title>
+    <title-short>AMA (11th ed.)</title-short>
     <id>http://www.zotero.org/styles/american-medical-association</id>
     <link href="http://www.zotero.org/styles/american-medical-association" rel="self"/>
     <link href="http://www.zotero.org/styles/american-medical-association-10th-edition" rel="template"/>
@@ -132,13 +132,14 @@
       <key macro="year"/>
     </sort>
     <layout>
-    <text macro="title" prefix="" suffix="" />
-<!--<group suffix=") —  " prefix=" (" font-weight="bold">
+    <text macro="title" prefix="" suffix="##!" />
+     <group suffix=") " prefix=" (">
             <date variable="issued">
               <date-part name="year"/>
             </date>
-          </group>-->
-       <choose>
+          </group>
+      <text macro="author"/>
+      <choose>
         <if type="bill book graphic legislation motion_picture report song" match="any">
           <group suffix="." prefix=" " delimiter=" ">
             <group delimiter=" ">
@@ -191,7 +192,6 @@
                     <date-part name="year"/>
                   </date>
                 </group>
-     <text macro="author"/>
                 <group>
                   <text term="accessed" text-case="capitalize-first" suffix=" "/>
                   <date variable="accessed">
@@ -295,7 +295,7 @@
           </group>
         </else>
       </choose>
-      <text prefix=" " macro="access"/>
+      <text prefix=" ##!" macro="access" />
     </layout>
   </bibliography>
 </style>
